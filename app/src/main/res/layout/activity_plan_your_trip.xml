@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#CD5C5C"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan Your Trip"
+                android:textColor="#CB4335"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textColor="#CB4335"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="signout"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/from"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/to"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Date"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <Button android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_gravity="left"
+                android:onClick="displaytolls"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                android:textColor="#fff"
+                android:background="@drawable/btn"
+                android:id="@+id/sub" />
+            <Button android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_gravity="left"
+                android:onClick="store"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:text="Book"
+                android:textColor="#fff"
+                android:background="@drawable/btn"
+                android:id="@+id/sub1" />
+</LinearLayout>
+
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Tolls:     "
+                    android:id="@+id/textView9"
+                    android:foregroundGravity="left"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@+id/editText7" />
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:hint=""
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/editText7"
+                    android:background="#f3f3f3"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView13"
+                    android:layout_toEndOf="@+id/textView13" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated cost(4W):     "
+                    android:id="@+id/textView10"
+                    android:foregroundGravity="left"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@+id/editText8" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:hint=""
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/editText8"
+                    android:background="#f3f3f3"
+
+                    android:layout_below="@+id/editText7"
+                    android:layout_alignLeft="@+id/editText7"
+                    android:layout_alignStart="@+id/editText7"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated cost(LCV):     "
+                    android:id="@+id/textView11"
+                    android:foregroundGravity="left"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@+id/editText9" />
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:hint=""
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:background="#f3f3f3"
+
+                    android:layout_below="@+id/editText8"
+                    android:layout_alignLeft="@+id/editText7"
+                    android:layout_alignStart="@+id/editText7"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated cost(Bus):     "
+                    android:id="@+id/textView12"
+                    android:foregroundGravity="left"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@+id/editText10" />
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:hint=""
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/editText10"
+                    android:background="#f3f3f3"
+
+                    android:layout_below="@+id/editText9"
+                    android:layout_alignLeft="@+id/editText7"
+                    android:layout_alignStart="@+id/editText7"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated cost(3axle):     "
+                    android:id="@+id/textView13"
+                    android:foregroundGravity="left"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@+id/editText11" />
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:hint=""
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/editText11"
+                    android:background="#f3f3f3"
+
+                    android:layout_below="@+id/editText10"
+                    android:layout_alignLeft="@+id/editText7"
+                    android:layout_alignStart="@+id/editText7"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#CD5C5C"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="#CB4335"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textColor="#CB4335"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="signout"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            android:weightSum="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView20"
+                    android:paddingRight="20dp"
+                    android:text="List of vehicle numbers with timestamp.
+Click the green icon to verify and deduct the amount from users."
+                    android:textSize="19dp"
+                    />
+
+
+            </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView21"
+                android:paddingRight="20dp"
+                />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButton2"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:onClick="verify1"
+        android:background="@drawable/tick"
+        android:layout_toRightOf="@+id/textView21"
+        android:visibility="invisible"/>
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView22"
+                android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton3"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify2"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView22"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView23"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton4"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify3"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView23"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView24"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton5"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify4"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView24"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView25"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton6"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify5"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView25"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView26"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton7"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify6"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView26"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView27"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton8"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify7"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView27"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView28"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton9"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify8"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView28"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView29"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton10"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify9"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView29"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView30"
+                    android:paddingRight="20dp"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageButton11"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="verify10"
+                    android:background="@drawable/tick"
+                    android:layout_toRightOf="@+id/textView30"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

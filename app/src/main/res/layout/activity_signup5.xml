@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#CD5C5C"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#CB4335"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/greybackground"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:id="@+id/LinearLayoutV">
+
+            <ImageView android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon2"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="259dp"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Type Of Vehicle 1"
+                android:inputType="textCapCharacters"
+                android:id="@+id/textView5"
+                android:layout_weight="0.11"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:id="@+id/RadioGroup1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Four Wheeler(Light)"
+                    android:id="@+id/radioButton"
+                    android:checked="false"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:text="LCV"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Bus/Truck"
+                    android:id="@+id/radioButton3"
+                    android:textSize="15dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="3 axle"
+                    android:textSize="15dp"
+                    android:id="@+id/radioButton8"
+                    android:checked="false" />
+            </RadioGroup>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText7"
+                android:hint="License Plate Number 1"
+                android:inputType="textCapCharacters"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Type Of Vehicle 2 "
+                android:id="@+id/textView6" />
+
+            <RadioGroup
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:id="@+id/RadioGroup2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Four Wheeler(Light)"
+                    android:id="@+id/radioButton4"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LCV"
+                    android:id="@+id/radioButton5"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus/Truck"
+                    android:id="@+id/radioButton6"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 axle"
+                    android:id="@+id/radioButton7"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:id="@+id/editText8"
+                android:hint="License Plate Number 2"
+                android:inputType="textCapCharacters"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Type Of Vehicle 3 "
+                android:id="@+id/textView7" />
+
+            <RadioGroup
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:id="@+id/RadioGroup3">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Four Wheeler(Light)"
+                    android:id="@+id/radioButton10"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LCV"
+                    android:id="@+id/radioButton11"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus/Truck"
+                    android:id="@+id/radioButton12"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 axle"
+                    android:id="@+id/radioButton13"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:id="@+id/editText9"
+                android:hint="License Plate Number 3"
+                android:inputType="textCapCharacters"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Type Of Vehicle 4 "
+                android:id="@+id/textView8" />
+
+            <RadioGroup
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:id="@+id/RadioGroup4">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Four Wheeler(Light)"
+                    android:id="@+id/radioButton14"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LCV"
+                    android:id="@+id/radioButton15"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus/Truck"
+                    android:id="@+id/radioButton16"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 axle"
+                    android:id="@+id/radioButton17"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:id="@+id/editText10"
+                android:hint="License Plate Number 4"
+                android:inputType="textCapCharacters"/>
+
+
+
+            <Button android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:text="SUBMIT"
+                android:onClick="Next5"
+                android:textColor="#fff"
+                android:background="@drawable/btn"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TollGate2</string>
+    <string name="title_activity_signin">Signin</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_signup3">Signup3</string>
+    <string name="title_activity_plan_ur_trip2">PlanUrTrip2</string>
+    <string name="email"> <u>admtoll053@gmail.com</u>.</string>
+</resources>

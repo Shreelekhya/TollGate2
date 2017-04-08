@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#CD5C5C"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction History"
+                android:textColor="#CB4335"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textColor="#CB4335"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="signout"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Your deductions:"
+                android:textSize="20dp"/>
+
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="1)Place:"
+                  android:textSize="18dp"
+                  android:id="@+id/textView1"
+                  android:layout_marginTop="10dp"
+                  android:visibility="invisible"
+                  />
+              <TextView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+
+                android:text="vkhb"
+                android:textColor="#0000ff"
+                android:id="@+id/textView2"
+                  android:paddingTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                  android:visibility="invisible"/>
+              </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Vehicle Number:"
+                  android:textSize="18dp"
+                  android:id="@+id/textView3"
+                  android:paddingLeft="15dp"
+                  android:visibility="invisible"
+                  />
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+
+                android:text="gfjh"
+                android:textColor="#0000ff"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:visibility="invisible"
+               />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:id="@+id/textView5"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:visibility="invisible"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Deducted:"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView7"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="gjhg"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView8"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2)Place:"
+                    android:textSize="18dp"
+                    android:id="@+id/textView9"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView10"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:onClick="vn1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number:"
+                    android:textSize="18dp"
+                    android:id="@+id/textView11"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:text="gfjh"
+                    android:textColor="#0000ff"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView12"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:visibility="invisible"
+                    android:id="@+id/textView13"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="vkhb"
+                    android:visibility="invisible"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView14"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Deducted:"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView15"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="gjhg"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView16"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3)Place:"
+                    android:textSize="18dp"
+                    android:id="@+id/textView17"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView18"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number:"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    android:id="@+id/textView19"
+                    android:paddingLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:text="gfjh"
+                    android:textColor="#0000ff"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView20"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:id="@+id/textView21"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView22"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Deducted:"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView23"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="gjhg"
+                    android:visibility="invisible"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView24"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4)Place:"
+                    android:textSize="18dp"
+                    android:id="@+id/textView25"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView26"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number:"
+                    android:textSize="18dp"
+                    android:id="@+id/textView27"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:text="gfjh"
+                    android:textColor="#0000ff"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView28"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:id="@+id/textView29"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView30"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Deducted:"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView31"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="gjhg"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView32"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5)Place:"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView33"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView34"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number:"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="invisible"
+                    android:id="@+id/textView35"
+                    />
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:text="gfjh"
+                    android:textColor="#0000ff"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView36"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/textView37"
+                    />
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:text="vkhb"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView38"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Deducted:"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView39"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="gjhg"
+                    android:textColor="#0000ff"
+                    android:id="@+id/textView40"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+
+            <Button android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="160dp"
+                android:text="Back"
+                android:layout_marginBottom="80dp"
+                android:onClick="back"
+                android:textColor="#fff"
+                android:background="@drawable/btn"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
